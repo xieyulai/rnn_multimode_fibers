@@ -1,11 +1,11 @@
 # Numerical Simulation and RNN Prediction Project
 
-## 0. Acknowledgements
+## 0. Acknowledgement and Purpose
 This project is based on https://github.com/ugurtegin/MMF_RNN_Reuse. 
 
 - We use the numerical simulation code from the repository to generate the data. 
 - We use the RNN code from the repository to train the RNN models. 
-- We reproduce the RNN's results for comparsing with our method (https://github.com/xieyulai/query-based-prediction-for-multimode-fibers).
+- We reproduce the RNN's results for comparing them with our method (https://github.com/xieyulai/query-based-prediction-for-multimode-fibers).
 
 ## 1. Procedure
 1. **Data Generation (0)**
@@ -34,7 +34,7 @@ We select `N = 4000` for our experiments.
 
 The generated result will be saved in `ori_data/data_{N}`.
 
-## 2. Data Processing for RNN
+## 5. Data Processing for RNN
 
 Once the data is generated, it needs to be processed into a format suitable for RNN training. This involves organizing the data into sequences with a specified window size.
 
@@ -50,7 +50,7 @@ python 1_compose_for_rnn.py
 
 The processed data will be saved in `rnn_data/rnn_{N}_{L}`.
 
-## 3. RNN Model Training
+## 6. RNN Model Training
 
 The final step is to train the RNN model using the processed data. The model can be configured to train on either spectral ('s') or temporal ('t') data.
 
